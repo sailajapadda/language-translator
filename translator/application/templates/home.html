@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Language Translator</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="{% static 'css/style.css' %}"  rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <ul class="Translator">
+                <li>
+                    <select name="" id="">
+                      
+                     </select>
+                </li>
+                <li><i class='bx bx-transfer-alt' id="change"></i></li>
+                <li>
+                    <select name="" id="">
+                       
+                       
+                     </select>
+                </li>
+            </ul>
+            <div class="text-box">
+                <div class="text-from">
+                    <textarea maxlength="5000" class="fromtext"  id="from" placeholder="write down"></textarea>
+                    <div class="icons">
+                        <span class="bx bx-copy" id="copy1"></span>
+                        <i class='bx bx-microphone' id="voice"></i>
+                        <span class="bx bx-volume-full" id="vol1"></span>
+
+                    </div>
+            
+                </div>
+                <div class="text-to">
+                    <textarea maxlength="5000" class="totext" placeholder=""></textarea>
+                    <div class="icons">
+                        <span class="bx bx-copy" id="copy2"></span>
+                        <span class="bx bx-volume-full" id="vol2"></span>
+                    
+                    </div>    
+                </div>
+            </div>
+
+        </div>
+        .
+    </div>
+    
+    
+</body>
+    <script  type="module" src="{% static 'js/main.js' %}"></script>
+    <script  type="module" src="{% static 'js/language.js' %}"></script>
+</html>
